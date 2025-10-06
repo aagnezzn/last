@@ -18,7 +18,6 @@
       background: #f4f4f9;
     }
 
-    /* === NAVBAR === */
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -39,65 +38,24 @@
       color: #fff;
     }
 
-    /* Burger menu */
     .menu-icon {
-      font-size: 28px;
-      cursor: pointer;
-      display: block;
-      color: #fff;
-    }
-
-    #menu-toggle {
       display: none;
     }
 
     .nav-links {
-      display: none;
-      flex-direction: column;
-      background: #333;
-      position: absolute;
-      top: 55px;
-      left: 0;
-      width: 100%;
-      padding: 15px;
+      display: flex;
+      gap: 20px;
     }
 
     .nav-links a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      padding: 10px 0;
-      display: block;
     }
 
     .nav-links a:hover {
       color: #2bb9c9fe;
       text-decoration: underline;
-    }
-
-    #menu-toggle:checked ~ .nav-links {
-      display: flex;
-    }
-
-    /* MODE DESKTOP */
-    @media (min-width: 768px) {
-      .menu-icon {
-        display: none;
-      }
-
-      .nav-links {
-        display: flex !important;
-        position: static;
-        flex-direction: row;
-        background: none;
-        width: auto;
-        padding: 0;
-        gap: 20px;
-      }
-
-      .nav-links a {
-        padding: 0;
-      }
     }
 
     .search-form {
@@ -125,7 +83,6 @@
       background: #0056b3;
     }
 
-    /* === CONTAINER & TABLE === */
     .container {
       max-width: 1000px;
       margin: 100px auto 40px;
@@ -185,8 +142,39 @@
       background: #2a5ffc;
     }
 
-    /* === RESPONSIVE CARD MODE === */
+    /* Responsif hp */
     @media (max-width: 768px) {
+      .menu-icon {
+        font-size: 28px;
+        cursor: pointer;
+        display: block;
+        color: #fff;
+      }
+
+      #menu-toggle {
+        display: none;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+      }
+
+      #menu-toggle:checked ~ .nav-links {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px 0;
+        display: block;
+      }
+
       table, thead, tbody, th, td, tr {
         display: block;
       }
@@ -301,4 +289,6 @@
     <a href="dashboard.html" class="back-btn">⬅ Kembali ke Beranda</a>
   </div>
 </body>
+</html>
+
 </html>
