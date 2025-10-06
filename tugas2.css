@@ -1,6 +1,6 @@
 /* login */
 body.login-page {
-  margin: 0;  
+  margin: 0;
   padding: 0;
   min-height: 100vh;
   display: flex;
@@ -10,25 +10,25 @@ body.login-page {
 }
 
 .login-box {
-    background: whitesmoke;
-    padding: 30px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-    width: 350px;
-    display: flex;
-    flex-direction: column;
+  background: whitesmoke;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
 }
 
 .login-box h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
 }
 
 .login-box label {
-    margin: 10px 0 6px;
-    font-size: 14px;
-    color: rgb(0, 0, 0);
+  margin: 10px 0 6px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
 }
 
 .login-box input[type="text"],
@@ -62,18 +62,19 @@ body.login-page {
 }
 
 .login-box p {
-  text-align: center;   
-  margin-top: 15px;    }
+  text-align: center;
+  margin-top: 15px;
+}
 
 .login-box p a {
-  text-decoration: none; 
-  font-weight: bold;     
-  color: #333;          
-}
-.login-box p a:hover {
-  color: #045bb9;        
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
 }
 
+.login-box p a:hover {
+  color: #045bb9;
+}
 
 * {
   box-sizing: border-box;
@@ -81,14 +82,13 @@ body.login-page {
   padding: 0;
 }
 
-
 body.dashboard-page,
 body.admin-page {
   font-family: 'Times New Roman', Times, serif;
   background: #f9f9f9;
 }
 
-/*  NAVBAR DASHBOARD & ADMIN */
+/* NAVBAR DASHBOARD & ADMIN */
 .dashboard-page .navbar,
 .admin-page .navbar {
   display: flex;
@@ -110,65 +110,24 @@ body.admin-page {
   color: #fff;
 }
 
-/* Burger menu */
 .menu-icon {
-  font-size: 28px;
-  cursor: pointer;
-  display: block;
-  color: #fff;
-}
-
-#menu-toggle {
   display: none;
 }
 
 .nav-links {
-  display: none;
-  flex-direction: column;
-  background: #333;
-  position: absolute;
-  top: 55px;
-  left: 0;
-  width: 100%;
-  padding: 15px;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 0;
-  display: block;
 }
 
 .nav-links a:hover {
   color: #2bb9c9fe;
   text-decoration: underline;
-}
-
-#menu-toggle:checked ~ .nav-links {
-  display: flex;
-}
-
-/* MODE DESKTOP */
-@media (min-width: 768px) {
-  .menu-icon {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    background: none;
-    width: auto;
-    padding: 0;
-    gap: 20px;
-  }
-
-  .nav-links a {
-    padding: 0;
-  }
 }
 
 .search-form {
@@ -233,7 +192,7 @@ body.admin-page {
   margin: 100px auto;
   padding: 40px;
   max-width: 1000px;
-  background: #d0c5c5; 
+  background: #d0c5c5;
   border: 1px solid #d9c4c4;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
@@ -343,8 +302,39 @@ tr:nth-child(even) {
   margin: auto;
 }
 
-/* ===== RESPONSIF HP ===== */
+/* RESPONSIF HP */
 @media (max-width: 768px) {
+  .menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    display: block;
+  }
+
   .admin-container {
     padding: 10px;
     margin-top: 80px;
@@ -360,6 +350,3 @@ tr:nth-child(even) {
     padding: 8px;
   }
 }
-
-
-
